@@ -1,0 +1,85 @@
+site_name: Notlarım
+site_description: Yazılım, veri bilimi, yapay zeka ve siber güvenlik üzerine kişisel dokümantasyon
+site_author: Berat Ölmez
+theme:
+  name: material
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+      primary: indigo
+      accent: deep orange
+
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+      primary: blue
+      accent: deep orange
+  font:
+    text: Merriweather Sans
+    code: Fira Code
+
+  logo: /assets/logo.jpeg
+  favicon: /assets/logo.jpeg
+  features:
+    - navigation.expand
+    - navigation.sections
+    - navigation.footer
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+plugins:
+  - search
+  - tags
+nav:
+  - Ana Sayfa: 'index.md'
+  - Java Spring:
+    - Temel Anotasyonlar: JavaSpring/basic_annotations.md
+    - HTTP Metotları: JavaSpring/http_methods.md
+    - Spring Data JPA (Veri Tabanı İşlemleri): JavaSpring/spring_data_jpa.md
+    - Spring Validation (Doğrulama): JavaSpring/spring_validation.md
+    - Relations (Entity İlişkileri): JavaSpring/relations.md
+    - application.properties (Veri Tabanı Ayarları): JavaSpring/application_properties.md
+    - Exception Handling (Hata Yakalama): JavaSpring/exceptions.md
+    - Scheduled (Planlama): JavaSpring/scheduled.md
+    - JUnit Testleri: JavaSpring/junit.md
+    - JWT (JSON Web Token): JavaSpring/json_web_token.md
+markdown_extensions:
+  - codehilite:
+      guess_lang: false
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format 
+  - pymdownx.snippets
+  - pymdownx.inlinehilite
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - admonition:
+  - pymdownx.details:
+
+extra:
+  generator: true
+  social:
+    - icon: simple/youtube
+      link: https://www.youtube.com/watch?v=xlABhbnNrfI
+
+copyright: Copyright &copy; 2025 Berat Ölmez
