@@ -47,7 +47,8 @@ nav:
     - Scheduled (Planlama): JavaSpring/scheduled.md
     - JUnit Testleri: JavaSpring/junit.md
     - JWT (JSON Web Token): JavaSpring/json_web_token.md
-  - Docker: Docker/oracle_database_sqlplus.md
+  - Docker:
+    - Oracle Database SQLPlus: Docker/oracle_database_sqlplus.md
 markdown_extensions:
   - codehilite:
       guess_lang: false
