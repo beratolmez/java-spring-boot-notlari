@@ -49,6 +49,8 @@ nav:
     - JWT (JSON Web Token): JavaSpring/json_web_token.md
   - Docker:
     - Oracle Database SQLPlus: Docker/oracle_database_sqlplus.md
+  - Staj:
+    - Spring-Boot Projesi İçin Veri Tabanı Kurulumu: Staj/database_setup.md
 markdown_extensions:
   - codehilite:
       guess_lang: false

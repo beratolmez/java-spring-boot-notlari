@@ -4,62 +4,66 @@ Aşağıdaki işlemleri mac cihazınızda terminal üzerinde çalıştırabilirs
 
 1. Docker üzerinde bulunan mevcut imajlarını görüntüler.
  
-    ```zsh
+    ```sh
     docker image ls
     ```
 
 2. Docker için oracle veritabanı konteynırını ayağa kaldırır.
 
-    ```zsh
+    ```sh
     docker run <konteynır id veya konteynır ismi>
     ```
 
 3. Docker üzerinde çalışan konteynırları görüntüler.
 
-    ```zsh
+    ```sh
     docker image ps
     ```
 
 4. Hedeflenen konteynırın terminaline giriş yapar.
 
-    ```zsh
+    ```sh
     docker exec -it <konteynır id veya ismi> bash
     ```
 
 5. Oracle konteynır içinde SQLPlus komutunu çalıştırarak veritabanında yönetici ayrıcalıkları ile işlem yapılabilir.
 
-    ```zsh
+    ```sh
     sqlplus / as sysdba
     ```
 
 6. Belirtilen kullanıcı adı ve şifre ile veritabanı yönetimi için bir hesap oluşturur. (Blokları yazmayınız.)
 
-    ```zsh
+    ```sh
     CREATE USER <Username> IDENTIFIED BY <Password>;
     ```
 
-7. 
-    ```zsh
+7. Aşağıdaki komutlar ile yetki verin.
+
+    ```sh
     GRANT CONNECT, RESOURCE TO <Username>;
     ```
 
-8. 
-    ```zsh
+8. ...
+
+    ```sh
     GRANT DBA TO <Username>;
     ```
 
-9. 
-    ```zsh
+9.  Belirtilen dizinde dizin yolu oluşturun.
+
+    ```sh
     CREATE OR REPLACE DIRECTORY EXPORT_DIR AS 'C:\EXPORT;
     ```
 
 10. SQLPlus içerisinden çıkın.
     
-    ```zsh
+    ```sh
     exit
     ```
 
-11. 
+11. Şemayı aktarın.
+
     ```
     impdp <Username>/<Password>@localhost:1521/FREE schemas=C##MUSA remap_schema=C##MUSA:<Username> directory=EXPORT_DIR dumpfile=EXPORT_FILE.dmp logfile=my_import.log content=ALL
     ```
