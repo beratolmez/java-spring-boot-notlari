@@ -12,6 +12,7 @@ theme:
       primary: indigo
       accent: deep orange
 
+    # Light Mode
     - scheme: default
       toggle:
         icon: material/weather-sunny
@@ -36,21 +37,78 @@ plugins:
   - tags
 nav:
   - Ana Sayfa: 'index.md'
-  - Java Spring:
-    - Temel Anotasyonlar: JavaSpring/basic_annotations.md
-    - HTTP Metotları: JavaSpring/http_methods.md
-    - Spring Data JPA (Veri Tabanı İşlemleri): JavaSpring/spring_data_jpa.md
-    - Spring Validation (Doğrulama): JavaSpring/spring_validation.md
-    - Relations (Entity İlişkileri): JavaSpring/relations.md
-    - application.properties (Veri Tabanı Ayarları): JavaSpring/application_properties.md
-    - Exception Handling (Hata Yakalama): JavaSpring/exceptions.md
-    - Scheduled (Planlama): JavaSpring/scheduled.md
-    - JUnit Testleri: JavaSpring/junit.md
-    - JWT (JSON Web Token): JavaSpring/json_web_token.md
+  - Yapay Zeka:
+      - Yapay Zeka: ArtificialIntelligence/artificial_intelligence.md
+      - Yapay Sinir Ağları:
+          - Yapay Sinir Ağlarına Giriş: ArtificialIntelligence/ArtificialNeuralNetworks/artificial_neural_networks_introduction.md
+          - TensorFlow: ArtificialIntelligence/ArtificialNeuralNetworks/tensorflow.md
+      - Bulanık Mantık: ArtificialIntelligence/FuzzyLogic/introduction_to_fuzzy_logic.md
+      - Pekiştirmeli Öğrenme: ArtificialIntelligence/ReinforcementLearning/reinforcement_learning.md
+  - Veri Analizi:
+      - Veri Madenciliği:
+          - Giriş: DataAnalysis/DataMining/introduction_to_data_mining.md
+          - Veri Ön İşleme: DataAnalysis/DataMining/preprocessing.md
+          - Veri: DataAnalysis/DataMining/data.md
+      - Veri Kümeleri Üzerine Çalışma: DataAnalysis/working_on_the_dataset.md
+      - Matplotlib: DataAnalysis/matplotlib.md
+      - Numpy: DataAnalysis/numpy.md
+      - Pandas: DataAnalysis/pandas.md
   - Docker:
-    - Oracle Database SQLPlus: Docker/oracle_database_sqlplus.md
+      - Ayberk Aytekin ile Hızlandırılmış Docker Eğitimi: Docker/accelerated_docker_training_ayti_tech.md
+      - Gökhan Şengün ile Docker Compose: Docker/docker_compose_gokhan_sengun.md
+      - Oracle Database ve SQLplus: Docker/oracle_database_sqlplus.md
+      - Kullanışlı Komutlar: Docker/useful_commands.md
+  - Etik Hacking:
+      - Beyaz Hacker: EthicalHacking/beyaz_hacker.md
+      - DNS Değişikliği: EthicalHacking/dns_change.md
+      - Atıl Samancıoğlu ile Etik Hacking: EthicalHacking/ethical_hacking_atil_samancioglu.md
+      - Vortex ile Harici Ağ: EthicalHacking/external_network_with_vortex.md
+      - Ngrok: EthicalHacking/ngrok.md
+      - Pro Manuel Web Sızma: EthicalHacking/pro_manuel_web_pentesting.md
+      - Steganografi: EthicalHacking/steganografi.md
+      - Wi-Fi Hacking: EthicalHacking/wifi_hacking.md
+  - Git:
+      - Git ve GitHub: Git/git_and_github.md
+  - Bilgi Güvenliği & Kriptografi:
+      - Giriş: InformationSecurity&Cryptography/introduction_to_information_security_and_cryptography.md
   - Staj:
-    - Spring-Boot Projesi İçin Veri Tabanı Kurulumu: Staj/database_setup.md
+      - Veri Tabanı Kurulumu: Intership/database_setup.md
+      - Maven Komutları: Intership/mvn_commands.md
+  - Java:
+      - JavaFX:
+          - JavaFX: Java/JavaFX/javafx.md
+      - Java Spring:
+          - Temel Anotasyonlar: Java/JavaSpring/basic_annotations.md
+          - HTTP Metotları: Java/JavaSpring/http_methods.md
+          - Spring Data JPA (Veri Tabanı İşlemleri): Java/JavaSpring/spring_data_jpa.md
+          - Spring Validation (Doğrulama): Java/JavaSpring/spring_validation.md
+          - Relations (Entity İlişkileri): Java/JavaSpring/relations.md
+          - application.properties (Veri Tabanı Ayarları): Java/JavaSpring/application_properties.md
+          - Exception Handling (Hata Yakalama): Java/JavaSpring/exceptions.md
+          - Scheduled (Planlama): Java/JavaSpring/scheduled.md
+          - JUnit Testleri: Java/JavaSpring/junit.md
+          - JWT (JSON Web Token): Java/JavaSpring/json_web_token.md
+#  - KeNot:
+ #     - Şiirsel Notlar: KeNot/siirsel_notlar.md
+  - Linux:
+      - Bash: Linux/bash.md
+      - Linux Komutları: Linux/linux_user_commands.md
+  - MkDocs:
+      - MkDocs Notları: MkDocs/mkdocs_notlari.md
+  - Mobil Programlama:
+      - BTK Kotlin: MobileProgramming/btk_kotlin.md
+  - Ağ:
+      - Bilgisayar Ağları: Network/computer_networks.md
+      - IP, Subnetting, NAT, PAT: Network/ip_subnetting_nat_pat.md
+      - Kablosuz Ağlara Giriş: Network/wireless_networks_introduction.md
+  - Programlanabilir Yapılar:
+      - Programlanabilir Yapılar: ProgrammableStructures/programmable_structures.md
+  - Python:
+      - Django (Sadık Turan): Python/django_sadik_turan.md
+      - Python: Python/python.md
+  - SQL:
+      - BTK Akademi SQL: SQL/btk_akademi_sql.md
+
 markdown_extensions:
   - codehilite:
       guess_lang: false
